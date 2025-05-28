@@ -2,8 +2,8 @@ import streamlit as st
 import joblib
 
 # Load model and vectorizer (FIXED paths using raw strings)
-model = joblib.load(r"models\model.pkl")
-vectorizer = joblib.load(r"vectorizer\vectorizer.pkl")
+model = joblib.load("models/model.pkl")
+vectorizer = joblib.load("vectorizer/vectorizer.pkl")
 
 # Define news sources
 sources = sorted([
